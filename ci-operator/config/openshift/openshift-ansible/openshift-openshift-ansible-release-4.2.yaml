@@ -66,12 +66,6 @@ tests:
     tox
   container:
     from: test-bin
-- as: e2e-aws-workers-rhel7
-  steps:
-    cluster_profile: aws
-    env:
-      PLATFORM_VERSION: "7.9"
-    workflow: openshift-e2e-aws-workers-rhel
 zz_generated_metadata:
   branch: release-4.2
   org: openshift
